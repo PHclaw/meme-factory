@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #0f0f0f;
+}
+
+.meme-canvas {
+  position: relative;
+  overflow: hidden;
+}
+
+.meme-text-top,
+.meme-text-bottom {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Impact, 'Arial Black', sans-serif;
+  font-weight: 900;
+  color: white;
+  text-shadow:
+    -3px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+    3px 3px 0 #000,
+    0 -3px 0 #000,
+    0 3px 0 #000,
+    -3px 0 0 #000,
+    3px 0 0 #000;
+  text-transform: uppercase;
+  text-align: center;
+  width: 90%;
+  word-wrap: break-word;
+  pointer-events: none;
+  user-select: none;
+}
